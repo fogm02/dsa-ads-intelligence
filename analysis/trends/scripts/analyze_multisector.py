@@ -44,9 +44,15 @@ import matplotlib.pyplot as plt
 import requests
 from scipy import stats
 
-OUT_DIR = Path('/Users/matfogla/dev/diplom_dev/local_data/trends')
-MANUAL_DIR = OUT_DIR / 'manual'
-GOLD_DAILY = Path('/Users/matfogla/dev/diplom_dev/local_data/test_output/cross_platform_daily.parquet')
+TRENDS_ROOT = Path(__file__).resolve().parent.parent
+MANUAL_DIR = TRENDS_ROOT / 'data' / 'google_trends'
+WIKI_DIR = TRENDS_ROOT / 'data' / 'wikipedia'
+CORRELATIONS_DIR = TRENDS_ROOT / 'output' / 'correlations'
+CHARTS_DIR = TRENDS_ROOT / 'output' / 'charts'
+
+# Path to gold parquet from main pipeline (set via env var or override here)
+import os
+GOLD_DAILY = Path(os.environ.get('GOLD_DAILY_PATH', TRENDS_ROOT.parent.parent / 'azure_functions' / 'gold' / 'cross_platform_daily.parquet'))
 
 DATE_FROM = '2025-04-01'
 DATE_TO = '2026-03-20'
@@ -299,7 +305,7 @@ def plot_sector_panels(gold, wiki, sname, cfg, granularity='monthly'):
     plt.suptitle(f'{sname} — reach vs Google Trends vs Wikipedia (měsíční, {DATE_FROM} – {DATE_TO})',
                  fontsize=13, fontweight='bold', y=1.005)
     plt.tight_layout()
-    out = OUT_DIR / f'sector_{sname.lower().replace(" ","_")}_panels.png'
+    out = CHARTS_DIR / f'sector_{sname.lower().replace(" ","_")}_panels.png'
     plt.savefig(out, dpi=130, bbox_inches='tight')
     plt.close(fig)
     print(f'  Saved: {out}')
@@ -347,7 +353,7 @@ def plot_summary(sector_monthly, sector_weekly):
     ax.set_xlim(-0.1, 1.0); ax.set_ylim(-0.1, 1.0)
 
     plt.tight_layout()
-    out = OUT_DIR / 'sector_comparison.png'
+    out = CHARTS_DIR / 'sector_comparison.png'
     plt.savefig(out, dpi=130, bbox_inches='tight')
     plt.close(fig)
     print(f'\nSaved: {out}')
@@ -356,10 +362,11 @@ def plot_summary(sector_monthly, sector_weekly):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    for d in (WIKI_DIR, CORRELATIONS_DIR, CHARTS_DIR):
+        d.mkdir(parents=True, exist_ok=True)
 
     # 1) Wikipedia — monthly (pro monthly korelace) i weekly (z denních dat sečtených na W-MON)
-    wiki_monthly_cache = OUT_DIR / 'wiki_pageviews_monthly.csv'
+    wiki_monthly_cache = WIKI_DIR / 'wiki_pageviews_monthly.csv'
     if wiki_monthly_cache.exists():
         print(f'[cache] Wiki monthly: {wiki_monthly_cache}')
         wiki_monthly = pd.read_csv(wiki_monthly_cache, parse_dates=['date'], index_col='date')
@@ -369,7 +376,7 @@ def main():
         wiki_monthly.to_csv(wiki_monthly_cache)
 
     # Weekly Wiki: agregace z denních dat (sum přes W-MON) — pro weekly korelace
-    wiki_daily_cache = OUT_DIR / 'wiki_pageviews_daily.csv'
+    wiki_daily_cache = WIKI_DIR / 'wiki_pageviews_daily.csv'
     if wiki_daily_cache.exists():
         print(f'[cache] Wiki daily: {wiki_daily_cache}')
         wiki_daily = pd.read_csv(wiki_daily_cache, parse_dates=[0], index_col=0)
@@ -388,10 +395,10 @@ def main():
     print('\n[Weekly] Korelace per brand i sektor:')
     brand_w, sector_w = run_correlations(gold, wiki_weekly, 'weekly')
 
-    brand_m.to_csv(OUT_DIR / 'correlations_monthly.csv', index=False)
-    brand_w.to_csv(OUT_DIR / 'correlations_weekly.csv', index=False)
-    sector_m.to_csv(OUT_DIR / 'sector_monthly.csv', index=False)
-    sector_w.to_csv(OUT_DIR / 'sector_weekly.csv', index=False)
+    brand_m.to_csv(CORRELATIONS_DIR / 'correlations_monthly.csv', index=False)
+    brand_w.to_csv(CORRELATIONS_DIR / 'correlations_weekly.csv', index=False)
+    sector_m.to_csv(CORRELATIONS_DIR / 'sector_monthly.csv', index=False)
+    sector_w.to_csv(CORRELATIONS_DIR / 'sector_weekly.csv', index=False)
 
     # 4) Comparative print
     print('\n' + '=' * 95)

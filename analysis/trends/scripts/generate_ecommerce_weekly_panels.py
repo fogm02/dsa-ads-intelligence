@@ -9,9 +9,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats as st
 
-OUT_DIR = Path('/Users/matfogla/dev/diplom_dev/local_data/trends')
-MANUAL_DIR = OUT_DIR / 'manual'
-GOLD_DAILY = Path('/Users/matfogla/dev/diplom_dev/local_data/test_output/cross_platform_daily.parquet')
+import os
+TRENDS_ROOT = Path(__file__).resolve().parent.parent
+MANUAL_DIR = TRENDS_ROOT / 'data' / 'google_trends'
+WIKI_DIR = TRENDS_ROOT / 'data' / 'wikipedia'
+CHARTS_DIR = TRENDS_ROOT / 'output' / 'charts'
+GOLD_DAILY = Path(os.environ.get('GOLD_DAILY_PATH', TRENDS_ROOT.parent.parent / 'azure_functions' / 'gold' / 'cross_platform_daily.parquet'))
 DATE_FROM = '2025-04-01'
 DATE_TO = '2026-03-20'
 
@@ -51,7 +54,7 @@ def main():
     trends_per = trends.resample('W-MON').mean()
 
     # --- Wikipedia weekly ---
-    wiki = pd.read_csv(OUT_DIR / 'wiki_pageviews_weekly.csv', parse_dates=[0], index_col=0)
+    wiki = pd.read_csv(WIKI_DIR / 'wiki_pageviews_weekly.csv', parse_dates=[0], index_col=0)
     wiki = wiki.resample('W-MON').mean()
 
     # --- Plot 5 panels ---
@@ -110,7 +113,8 @@ def main():
     plt.suptitle(f'E-commerce — reach vs Google Trends vs Wikipedia (týdenní, {DATE_FROM} – {DATE_TO})',
                  fontsize=13, fontweight='bold', y=1.005)
     plt.tight_layout()
-    out = OUT_DIR / 'sector_e-commerce_panels_weekly.png'
+    CHARTS_DIR.mkdir(parents=True, exist_ok=True)
+    out = CHARTS_DIR / 'sector_e-commerce_panels_weekly.png'
     plt.savefig(out, dpi=130, bbox_inches='tight')
     plt.close(fig)
     print(f'Saved: {out}')

@@ -38,7 +38,8 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-OUT_DIR = Path('/Users/matfogla/dev/diplom_dev/local_data/trends')
+OUT_DIR = Path(__file__).resolve().parent.parent / 'data' / 'wikipedia'
+OUT_DIR.mkdir(parents=True, exist_ok=True)
 WIKI_API = "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article"
 HEADERS = {'User-Agent': 'thesis-research/1.0 (Wikipedia pageviews analysis)'}
 
