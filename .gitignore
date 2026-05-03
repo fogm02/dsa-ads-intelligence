@@ -1,0 +1,35 @@
+# Environment & secrets
+.env
+.env.local
+local.settings.json
+**/local.settings.json
+linkedin_token.json
+**/linkedin_token.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+
+# Azure
+.python_packages/
+__azurite_*
+__blobstorage__/
+__queuestorage__/
+AzuriteConfig
+
+# Data outputs
+data/
+logs/
+test_output/
+**/test_output/
+
+# OS / IDE
+.DS_Store
+.idea/
+*.swp
+*.swo

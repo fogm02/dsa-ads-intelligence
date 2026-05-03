@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[4.*, 5.0.0)"
+  },
+  "logging": {
+    "logLevel": {
+      "default": "Information",
+      "Host.Triggers.Timer": "Information",
+      "Azure": "Warning",
+      "Azure.Core": "Warning",
+      "Azure.Core.Pipeline.Policies.HttpLoggingPolicy": "Error",
+      "Azure.Storage": "Warning"
+    }
+  },
+  "functionTimeout": "00:30:00",
+  "extensions": {
+    "timers": {
+      "isPersistenceEnabled": false
+    }
+  }
+}

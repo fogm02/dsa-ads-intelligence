@@ -1,0 +1,39 @@
+# Virtual env
+.venv
+venv
+
+# Test files & results
+test_*.py
+tests/
+*.test.py
+
+# Local data (not for cloud)
+catchup/
+test_output/
+backups/
+
+# Dashboard (deployed separately to App Service, ne Function App)
+dashboard/
+dashboard_azure/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Local config
+local.settings.json
+.env
+
+# Data files
+*.parquet
+*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store

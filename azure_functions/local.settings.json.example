@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "TIKTOK_CLIENT_KEY": "<your-tiktok-client-key>",
+    "TIKTOK_CLIENT_SECRET": "<your-tiktok-client-secret>",
+    "BLOB_CONNECTION_STRING": "<your-azure-blob-connection-string>",
+    "BLOB_CONTAINER_NAME": "diploma",
+    "META_ACCESS_TOKEN": "<your-meta-user-access-token>",
+    "LINKEDIN_ACCESS_TOKEN": "<your-linkedin-access-token>"
+  }
+}

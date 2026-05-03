@@ -1,0 +1,678 @@
+/* ═══════════════════════════════════════════════════════════════
+   Social SoV Dashboard · Modern light theme
+   ═══════════════════════════════════════════════════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* Surfaces */
+    --bg: #f4f4f8;
+    --surface: #ffffff;
+    --surface-2: #fafafb;
+    --surface-hover: #f0f0f5;
+
+    /* Borders */
+    --border: rgba(0,0,0,.06);
+    --border-strong: rgba(0,0,0,.1);
+
+    /* Text */
+    --ink: #111827;
+    --ink-2: #1f2937;
+    --muted: #6b7280;
+    --muted-2: #9ca3af;
+
+    /* Brand */
+    --brand: #6366f1;
+    --brand-soft: rgba(99,102,241,.08);
+    --brand-ink: #4f46e5;
+    --brand-2: #a78bfa;
+
+    /* Platform */
+    --meta: #1877F2;
+    --tiktok: #000000;
+    --linkedin: #0A66C2;
+
+    /* Semantic */
+    --success: #10b981;
+    --accent: #f43f5e;
+
+    /* Shadows */
+    --shadow-xs: 0 1px 2px rgba(0,0,0,.04);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+    --shadow-md: 0 4px 16px -4px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+    --shadow-lg: 0 12px 32px -8px rgba(0,0,0,.12);
+    --shadow-glow: 0 0 0 1px rgba(99,102,241,.06);
+
+    /* Geometry */
+    --radius-sm: 10px;
+    --radius: 14px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+
+    --sidebar-w: 220px;
+}
+
+* { box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.01em;
+}
+
+#react-entry-point, #_dash-app-content { min-height: 100vh; }
+
+/* ── App shell ─────────────────────────────────────────────── */
+.app-shell { display: flex; min-height: 100vh; background: var(--bg); }
+
+/* ── Sidebar ───────────────────────────────────────────────── */
+.sidebar {
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    position: sticky; top: 24px;
+    height: calc(100vh - 48px);
+    margin: 24px 0 24px 24px;
+    overflow-y: auto; overflow-x: hidden;
+    padding: 22px 14px 20px;
+    display: flex; flex-direction: column; gap: 22px;
+    z-index: 20;
+    box-shadow: var(--shadow-sm);
+}
+.sidebar::-webkit-scrollbar { width: 5px; }
+.sidebar::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 3px; }
+
+/* Brand */
+.sidebar-brand { display: flex; align-items: center; gap: 12px; padding: 4px 8px 0; }
+.brand-logo {
+    width: 38px; height: 38px; border-radius: 12px;
+    background: linear-gradient(135deg, #6366f1, #a78bfa 60%, #f43f5e 130%);
+    box-shadow: 0 4px 14px -4px rgba(99,102,241,.4);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 800; font-size: 15px;
+    letter-spacing: -0.03em; flex-shrink: 0;
+}
+.brand-name { font-weight: 700; font-size: 14.5px; color: var(--ink); letter-spacing: -0.015em; }
+
+/* Sidebar sections */
+.sidebar-section { display: flex; flex-direction: column; gap: 4px; }
+.sidebar-section-label {
+    font-size: 9.5px; font-weight: 700; color: var(--muted-2);
+    letter-spacing: 0.14em; text-transform: uppercase; padding: 0 12px 4px;
+}
+
+/* Sidebar nav */
+.sidebar-nav { display: flex; flex-direction: column; gap: 2px; }
+.sidebar-nav .nav-link {
+    display: flex !important; align-items: center; gap: 11px;
+    padding: 8px 10px !important; border-radius: 10px !important;
+    color: var(--muted) !important; font-weight: 500 !important;
+    font-size: 13.5px !important; background: transparent !important;
+    transition: all .15s ease; cursor: pointer !important;
+    text-decoration: none !important; border: none !important; line-height: 1.3 !important;
+}
+.sidebar-nav .nav-link:hover {
+    background: var(--surface-hover) !important; color: var(--ink-2) !important;
+}
+.sidebar-nav .nav-link.active {
+    background: var(--brand-soft) !important; color: var(--brand-ink) !important;
+    font-weight: 600 !important;
+}
+
+/* Nav icons */
+.nav-icon {
+    display: inline-block; width: 16px; height: 16px;
+    background-color: currentColor;
+    -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: 16px;
+    mask-position: center; mask-repeat: no-repeat; mask-size: 16px;
+    flex-shrink: 0; opacity: 0.55; transition: opacity .15s ease;
+}
+.sidebar-nav .nav-link:hover .nav-icon,
+.sidebar-nav .nav-link.active .nav-icon { opacity: 1; }
+
+.nav-icon--overview {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='7' height='7' rx='1'/%3E%3Crect x='14' y='3' width='7' height='7' rx='1'/%3E%3Crect x='14' y='14' width='7' height='7' rx='1'/%3E%3Crect x='3' y='14' width='7' height='7' rx='1'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='7' height='7' rx='1'/%3E%3Crect x='14' y='3' width='7' height='7' rx='1'/%3E%3Crect x='14' y='14' width='7' height='7' rx='1'/%3E%3Crect x='3' y='14' width='7' height='7' rx='1'/%3E%3C/svg%3E");
+}
+.nav-icon--season {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3v18h18'/%3E%3Cpath d='M7 12l4-6 4 4 4-5'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3v18h18'/%3E%3Cpath d='M7 12l4-6 4 4 4-5'/%3E%3C/svg%3E");
+}
+.nav-icon--sov {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3v18h18'/%3E%3Cpath d='M7 16V8'/%3E%3Cpath d='M12 16V4'/%3E%3Cpath d='M17 16v-7'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3v18h18'/%3E%3Cpath d='M7 16V8'/%3E%3Cpath d='M12 16V4'/%3E%3Cpath d='M17 16v-7'/%3E%3C/svg%3E");
+}
+.nav-icon--demo {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E");
+}
+.nav-icon--strat {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Ccircle cx='12' cy='12' r='6'/%3E%3Ccircle cx='12' cy='12' r='2'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Ccircle cx='12' cy='12' r='6'/%3E%3Ccircle cx='12' cy='12' r='2'/%3E%3C/svg%3E");
+}
+.nav-icon--targ {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='22' y1='12' x2='18' y2='12'/%3E%3Cline x1='6' y1='12' x2='2' y2='12'/%3E%3Cline x1='12' y1='6' x2='12' y2='2'/%3E%3Cline x1='12' y1='22' x2='12' y2='18'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='22' y1='12' x2='18' y2='12'/%3E%3Cline x1='6' y1='12' x2='2' y2='12'/%3E%3Cline x1='12' y1='6' x2='12' y2='2'/%3E%3Cline x1='12' y1='22' x2='12' y2='18'/%3E%3C/svg%3E");
+}
+.nav-icon--creative {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2'/%3E%3Ccircle cx='8.5' cy='8.5' r='1.5'/%3E%3Cpath d='m21 15-5-5L5 21'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2'/%3E%3Ccircle cx='8.5' cy='8.5' r='1.5'/%3E%3Cpath d='m21 15-5-5L5 21'/%3E%3C/svg%3E");
+}
+
+/* ── Filters ──────────────────────────────────────────────── */
+.filter-group {
+    display: flex; flex-direction: column;
+    gap: 6px !important; padding-top: 14px;
+    border-top: 1px solid var(--border);
+}
+.filter-group .switch-list {
+    margin-top: 10px !important; padding-top: 12px !important;
+    border-top: 1px solid var(--border);
+}
+
+/* Dropdowns */
+.Select-control {
+    border: none !important; background: transparent !important;
+    min-height: 36px !important; font-size: 13px !important;
+    box-shadow: none !important; outline: none !important;
+}
+.is-focused:not(.is-open) > .Select-control,
+.is-focused.is-open > .Select-control { border: none !important; box-shadow: none !important; outline: none !important; }
+.Select-placeholder, .Select-value-label { line-height: 34px !important; font-weight: 500 !important; font-size: 13px !important; }
+.Select-menu-outer {
+    border-radius: var(--radius-sm) !important; border: 1px solid var(--border-strong) !important;
+    box-shadow: var(--shadow-lg) !important; margin-top: 4px !important; overflow: hidden;
+}
+.VirtualizedSelectFocusedOption { background: var(--brand-soft) !important; color: var(--brand-ink) !important; }
+.Select-option { font-size: 13px !important; padding: 8px 12px !important; }
+.Select-arrow-zone { padding-right: 10px !important; }
+.Select-arrow { border-color: var(--muted-2) transparent transparent !important; border-width: 5px 4px 0 4px !important; }
+
+/* Sidebar dropdowns */
+.sidebar #f-sector, .sidebar #f-search, .sidebar #f-sector *, .sidebar #f-search *,
+.sidebar .Select, .sidebar .Select *, .sidebar .Select-control,
+#f-sector, #f-sector *, #f-search, #f-search * {
+    border: 0 !important; border-color: transparent !important; outline: 0 !important; box-shadow: none !important;
+}
+.sidebar .Select-control {
+    background-color: transparent !important; min-height: 40px !important;
+    padding: 0 4px !important; border-radius: 0 !important;
+}
+.sidebar .Select-control:hover { background-color: var(--surface-hover) !important; border-radius: 8px !important; }
+.sidebar .Select.is-focused > .Select-control,
+.sidebar .Select.is-open > .Select-control,
+.sidebar .is-focused:not(.is-open) > .Select-control,
+.sidebar .is-focused.is-open > .Select-control {
+    background-color: var(--surface-hover) !important; border-radius: 8px !important;
+}
+
+/* Sidebar typography */
+.sidebar, .sidebar .nav-link, .sidebar .Select, .sidebar .Select-control,
+.sidebar .Select-placeholder, .sidebar .Select-value, .sidebar .Select-value-label,
+.sidebar .Select-input, .sidebar .Select-input input,
+.sidebar .switch-list label, .sidebar .switch-list label > span {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 13.5px !important; font-weight: 500 !important;
+    letter-spacing: -0.005em !important; color: var(--muted) !important;
+}
+.sidebar .Select-placeholder, .sidebar .Select-value-label { line-height: 32px !important; padding-left: 0 !important; }
+.sidebar .Select-input { padding-left: 0 !important; height: 32px !important; }
+.sidebar .Select-control { min-height: 32px !important; }
+
+/* Sidebar colors */
+.sidebar-nav .nav-link, .sidebar-nav .nav-link > *,
+.sidebar .Select, .sidebar .Select *, .sidebar .Select-control, .sidebar .Select-control *,
+.sidebar .Select-placeholder, .sidebar .Select-value, .sidebar .Select-value-label,
+.sidebar .switch-list, .sidebar .switch-list label, .sidebar .switch-list label *,
+#f-sector, #f-sector *, #f-search, #f-search *, #f-plat, #f-plat * {
+    color: var(--muted) !important; opacity: 1 !important;
+}
+.sidebar .brand-logo { color: #ffffff !important; }
+.sidebar-nav .nav-link.active, .sidebar-nav .nav-link.active > * { color: var(--brand-ink) !important; }
+.sidebar-nav .nav-link.active { font-weight: 600 !important; }
+.sidebar .Select-arrow { border-color: var(--muted-2) transparent transparent !important; opacity: .7; }
+
+.Select input, .Select-input input, .Select-input > input,
+.sidebar input[type="text"], input[type="text"]:focus,
+.Select input:focus, .Select-input > input:focus {
+    outline: none !important; box-shadow: none !important; border: 0 !important; -webkit-appearance: none !important;
+}
+
+/* Toggle switches */
+.switch-list { display: flex; flex-direction: column; gap: 2px; padding: 0 !important; margin: 0 !important; }
+.switch-list label {
+    display: flex !important; align-items: center; gap: 10px;
+    padding: 6px 6px; border-radius: 8px; background: transparent !important;
+    border: none !important; cursor: pointer; transition: background .12s ease;
+    user-select: none; margin: 0 !important;
+}
+.switch-list label:hover { background: var(--surface-hover) !important; }
+.switch-list input[type=checkbox] {
+    appearance: none; -webkit-appearance: none; -moz-appearance: none;
+    width: 30px; height: 17px; border-radius: 999px; background: #d1d5db;
+    position: relative; cursor: pointer; margin: 0 !important; padding: 0;
+    border: none; outline: none; transition: background .2s ease; flex-shrink: 0;
+}
+.switch-list input[type=checkbox]::before {
+    content: ""; position: absolute; top: 2.5px; left: 2.5px;
+    width: 12px; height: 12px; border-radius: 50%; background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    transition: transform .2s cubic-bezier(.4,0,.2,1);
+}
+.switch-list input[type=checkbox]:checked::before { transform: translateX(13px); }
+.switch-list input[type=checkbox][value="meta"]:checked     { background: #1877F2; }
+.switch-list input[type=checkbox][value="linkedin"]:checked { background: #38bdf8; }
+.switch-list input[type=checkbox][value="tiktok"]:checked   { background: #111827; }
+
+/* Clear button */
+.btn-clear {
+    background: var(--surface-2) !important; border: 1px solid var(--border) !important;
+    color: var(--muted) !important; border-radius: var(--radius-sm) !important;
+    font-size: 12px !important; font-weight: 500 !important;
+    padding: 8px 12px !important; width: 100%; transition: all .15s ease;
+}
+.btn-clear:hover { background: #fef2f2 !important; border-color: #fecaca !important; color: #dc2626 !important; }
+
+/* ── Main content ──────────────────────────────────────────── */
+.main { flex: 1; padding: 24px 24px 24px 16px; min-width: 0; max-width: 100%; }
+
+/* Advertiser banner */
+.adv-banner {
+    background: linear-gradient(135deg, rgba(99,102,241,.06), rgba(167,139,250,.04)) !important;
+    border: 1px solid rgba(99,102,241,.15) !important;
+    color: var(--ink) !important; border-radius: var(--radius) !important;
+    padding: 11px 16px !important; font-size: 13px; margin-bottom: 14px !important;
+}
+.adv-banner strong { color: var(--brand-ink); font-weight: 700; }
+
+/* ── KPI grid ──────────────────────────────────────────────── */
+.kpi-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-bottom: 10px; }
+@media (max-width: 1280px) { .kpi-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px)  { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.kpi-card {
+    position: relative; background: var(--surface);
+    border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 14px 16px 12px; box-shadow: var(--shadow-xs);
+    transition: transform .2s ease, box-shadow .25s ease;
+    overflow: hidden; min-height: 80px;
+    display: flex; flex-direction: column; justify-content: center;
+}
+.kpi-card::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px;
+    background: linear-gradient(90deg, var(--kpi-accent, var(--brand)), transparent 80%);
+    opacity: .5;
+}
+.kpi-card:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.kpi-card:hover::before { opacity: 1; }
+.kpi-label {
+    font-size: 10px; font-weight: 600; color: var(--muted);
+    letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 6px;
+}
+.kpi-value {
+    font-size: 24px; font-weight: 700; color: var(--ink);
+    letter-spacing: -0.03em; line-height: 1.05; font-variant-numeric: tabular-nums;
+}
+.kpi-value--sm { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
+
+/* ── Filter card (date range picker in top filter bar) ────────
+   Goal: visually identical to KPI cards. Inter font, brand indigo
+   accent, subtle borders that match design language. Calendar is
+   rendered in modal portal (`with_portal=True`) to avoid clipping. */
+.filter-card {
+    padding: 14px 16px 10px;
+    --kpi-accent: var(--brand);
+    overflow: visible !important;  /* allow popup to extend beyond card if not in portal */
+}
+.filter-card .kpi-label {
+    margin-bottom: 8px;
+}
+
+/* ─── Outer input wrapper (compact, fits in KPI card) ─── */
+.DateRangePicker,
+.DateRangePicker_picker {
+    font-family: 'Inter', sans-serif !important;
+}
+.filter-card .DateRangePicker { width: 100% !important; background: transparent !important; }
+.filter-card .DateRangePickerInput {
+    background: var(--surface-2) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    height: 32px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    transition: border-color .2s ease, background .2s ease;
+}
+.filter-card .DateRangePickerInput:hover,
+.filter-card .DateRangePickerInput:focus-within {
+    border-color: var(--brand) !important;
+    background: var(--surface) !important;
+}
+.filter-card .DateRangePickerInput__withBorder { box-shadow: none !important; }
+
+/* ─── Date input fields ─── */
+.filter-card .DateInput {
+    background: transparent !important;
+    flex: 1 !important;
+    width: auto !important;
+    min-width: 0 !important;
+}
+.filter-card .DateInput_input {
+    background: transparent !important;
+    color: var(--ink) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em !important;
+    padding: 0 8px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    border: 0 !important;
+    width: 100% !important;
+    text-align: center;
+}
+.filter-card .DateInput_input::placeholder {
+    color: var(--muted-2) !important;
+    font-weight: 500 !important;
+}
+.filter-card .DateInput_input__focused {
+    border-bottom: 0 !important;
+    background: var(--brand-soft) !important;
+    border-radius: 4px;
+}
+
+/* ─── Arrow between dates ─── */
+.filter-card .DateRangePickerInput_arrow {
+    padding: 0 2px !important;
+    flex-shrink: 0;
+}
+.filter-card .DateRangePickerInput_arrow_svg {
+    fill: var(--muted) !important;
+    width: 14px !important;
+    height: 14px !important;
+}
+
+/* ─── Clear (×) button ─── */
+.filter-card .DateRangePickerInput_clearDates {
+    padding: 4px !important;
+    margin: 0 6px 0 0 !important;
+    background: transparent !important;
+    border-radius: 50%;
+    transition: background .15s ease;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.filter-card .DateRangePickerInput_clearDates:hover,
+.filter-card .DateRangePickerInput_clearDates_default:focus,
+.filter-card .DateRangePickerInput_clearDates_default:hover {
+    background: var(--surface-hover) !important;
+}
+.filter-card .DateRangePickerInput_clearDates_svg {
+    fill: var(--muted) !important;
+    height: 10px !important;
+    width: 10px !important;
+}
+
+/* ─── Calendar — portal modal background ─── */
+/* with_portal=True wraps calendar in a centered modal overlay */
+.DateRangePicker_picker__portal {
+    background-color: rgba(15, 23, 42, 0.55) !important;  /* dark overlay */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 10000 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ─── Calendar popup interior (the white card inside portal) ─── */
+.DateRangePicker_picker {
+    background: var(--surface) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 24px 64px rgba(15, 23, 42, .25), 0 8px 24px rgba(15, 23, 42, .12) !important;
+    border: 1px solid var(--border) !important;
+    overflow: hidden;
+    padding: 8px;
+}
+.DayPicker {
+    background: var(--surface) !important;
+    border-radius: 12px !important;
+    font-family: 'Inter', sans-serif !important;
+    box-shadow: none !important;
+}
+.DayPicker_transitionContainer { border-radius: 12px !important; }
+
+/* ─── Caption (month + year header) ─── */
+.CalendarMonth_caption {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+    color: var(--ink) !important;
+    padding: 18px 0 42px !important;
+}
+
+/* ─── Weekday header row ─── */
+.DayPicker_weekHeader { color: var(--muted) !important; }
+.DayPicker_weekHeader_li small {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    color: var(--muted) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em !important;
+}
+
+/* ─── Day cells ─── */
+.CalendarDay {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: var(--ink) !important;
+    border: 1px solid transparent !important;
+    background: transparent !important;
+    vertical-align: middle;
+    transition: background .15s ease, color .15s ease, transform .12s ease;
+}
+.CalendarDay__default { background: transparent !important; border-color: transparent !important; }
+.CalendarDay__default:hover {
+    background: var(--surface-hover) !important;
+    border-color: var(--border) !important;
+    border-radius: 8px;
+}
+.CalendarDay__blocked_out_of_range,
+.CalendarDay__blocked_out_of_range:hover {
+    color: var(--muted-2) !important;
+    background: transparent !important;
+    cursor: default;
+}
+.CalendarDay__hovered_span,
+.CalendarDay__hovered_span:hover {
+    background: var(--brand-soft) !important;
+    border-color: transparent !important;
+    color: var(--brand-ink) !important;
+}
+.CalendarDay__selected_span {
+    background: var(--brand-soft) !important;
+    border-color: transparent !important;
+    color: var(--brand-ink) !important;
+    font-weight: 600 !important;
+}
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+    background: var(--brand) !important;
+    border-color: var(--brand) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-radius: 8px;
+}
+.CalendarDay__selected_start { border-radius: 8px 0 0 8px !important; }
+.CalendarDay__selected_end { border-radius: 0 8px 8px 0 !important; }
+
+/* ─── Navigation arrows (prev/next month) ─── */
+.DayPickerNavigation_button {
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    background: var(--surface) !important;
+    width: 32px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: background .15s ease, border-color .15s ease;
+    box-shadow: var(--shadow-xs) !important;
+}
+.DayPickerNavigation_button:hover {
+    background: var(--surface-hover) !important;
+    border-color: var(--brand) !important;
+}
+.DayPickerNavigation_svg__horizontal {
+    fill: var(--ink) !important;
+    height: 14px !important;
+    width: 14px !important;
+}
+.DayPickerNavigation_leftButton__horizontalDefault { left: 22px !important; }
+.DayPickerNavigation_rightButton__horizontalDefault { right: 22px !important; }
+.DayPickerNavigation_button__default { top: 18px !important; }
+
+/* ─── Close button on portal (X in top-right of overlay) ─── */
+.DateRangePicker_closeButton {
+    top: 24px !important;
+    right: 24px !important;
+    background: var(--surface) !important;
+    border-radius: 50% !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    box-shadow: var(--shadow-md) !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: background .15s ease;
+}
+.DateRangePicker_closeButton:hover {
+    background: var(--surface-hover) !important;
+}
+.DateRangePicker_closeButton_svg {
+    fill: var(--ink) !important;
+    height: 14px !important;
+    width: 14px !important;
+}
+
+/* No triangle pointer above popup (we use modal portal) */
+.DateRangePicker_picker::before { display: none !important; }
+
+/* ── Chart cards ───────────────────────────────────────────── */
+.chart-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 18px 20px 8px;
+    box-shadow: var(--shadow-sm); height: 100%; min-width: 0;
+    overflow-x: hidden; overflow-y: clip;
+    transition: box-shadow .3s ease, border-color .3s ease;
+}
+.chart-card--fill {
+    display: flex;
+    flex-direction: column;
+}
+.chart-card:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+.chart-header { margin-bottom: 4px; padding-bottom: 2px; }
+.chart-title { font-size: 13px; font-weight: 600; color: var(--ink); letter-spacing: -0.01em; }
+.chart-subtitle { font-size: 11px; color: var(--muted); margin-top: 2px; line-height: 1.4; }
+
+/* Chart toggle (reach/count switcher) */
+.chart-toggle { display: flex; gap: 0; }
+.chart-toggle .form-check {
+    padding: 0; margin: 0;
+}
+.chart-toggle .form-check-input {
+    display: none;
+}
+.chart-toggle .form-check-label {
+    font-size: 11px !important; font-weight: 500 !important;
+    padding: 4px 10px; cursor: pointer;
+    color: var(--muted) !important;
+    border: 1px solid var(--border);
+    background: transparent;
+    transition: all .15s ease;
+}
+.chart-toggle .form-check:first-child .form-check-label {
+    border-radius: 6px 0 0 6px;
+}
+.chart-toggle .form-check:last-child .form-check-label {
+    border-radius: 0 6px 6px 0;
+    border-left: none;
+}
+.chart-toggle .form-check-input:checked + .form-check-label {
+    background: var(--brand-soft) !important;
+    color: var(--brand-ink) !important;
+    border-color: rgba(99,102,241,.3);
+}
+
+/* Grid helpers */
+.grid-row { display: grid; gap: 12px; margin-bottom: 12px; }
+
+/* Tab fill */
+.tab-fill {
+    display: flex; flex-direction: column;
+    height: calc(100vh - 148px); gap: 10px;
+}
+.tab-fill > .grid-row { flex: 1; margin-bottom: 0; min-height: 0; }
+
+.grid-57  { grid-template-columns: 5fr 7fr; }
+.grid-66  { grid-template-columns: 1fr 1fr; }
+.grid-12  { grid-template-columns: 1fr; }
+@media (max-width: 1100px) { .grid-57, .grid-66 { grid-template-columns: 1fr; } }
+
+/* ── Tabs ──────────────────────────────────────────────────── */
+.nav-tabs, .tabs-hidden .nav-tabs, .tabs-hidden > ul.nav, ul.nav.nav-tabs {
+    display: none !important; visibility: hidden !important; height: 0 !important; overflow: hidden !important;
+}
+.tab-content { padding: 0 !important; border: none !important; }
+.tab-pane { padding: 0 !important; }
+
+/* ── Section note ──────────────────────────────────────────── */
+.section-note {
+    font-size: 12px; color: var(--muted);
+    padding: 10px 14px; background: var(--surface-2);
+    border: 1px solid var(--border); border-left: 3px solid var(--brand-2);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin-bottom: 12px; flex-shrink: 0;
+}
+
+/* ── Data table ───────────────────────────────────────────── */
+.dash-table-container, .dash-spreadsheet-container {
+    border-radius: var(--radius-lg) !important; overflow: hidden !important;
+    background: var(--surface) !important; border: 1px solid var(--border) !important;
+    box-shadow: var(--shadow-xs) !important;
+}
+.dash-spreadsheet thead th {
+    font-size: 10px !important; font-weight: 700 !important;
+    letter-spacing: 0.08em !important; text-transform: uppercase !important;
+    color: var(--muted) !important; background: var(--surface-2) !important;
+    border-bottom: 1px solid var(--border-strong) !important; padding: 10px 12px !important;
+}
+.dash-spreadsheet tbody td {
+    font-size: 13px !important; color: var(--ink-2) !important;
+    border-bottom: 1px solid var(--border) !important; padding: 10px 12px !important;
+}
+.dash-spreadsheet tbody tr:hover td { background: var(--brand-soft) !important; }
+.dash-spreadsheet a { color: var(--brand) !important; font-weight: 600; text-decoration: none; }
+.dash-spreadsheet a:hover { text-decoration: underline; }
+
+/* ── Plotly ────────────────────────────────────────────────── */
+.js-plotly-plot .plotly .modebar { display: none !important; }
+.js-plotly-plot text { font-family: 'Inter', sans-serif !important; }
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .app-shell { flex-direction: column; }
+    .sidebar { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid var(--border); }
+    .main { padding: 16px 14px; }
+    .kpi-value { font-size: 20px; }
+}

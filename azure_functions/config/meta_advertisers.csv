@@ -1,0 +1,120 @@
+﻿sector,display_name,page_id,page_name,active
+banking,Bankovnictví / Finance,166024303411062,Raiffeisenbank,1
+banking,Bankovnictví / Finance,90594467955,Česká spořitelna,1
+banking,Bankovnictví / Finance,315972808450196,ČSOB,1
+banking,Bankovnictví / Finance,361281313901258,Komerční banka,1
+banking,Bankovnictví / Finance,116282735156025,Banka Creditas,1
+banking,Bankovnictví / Finance,271913363503049,Trinity Bank,1
+banking,Bankovnictví / Finance,108671021569346,Partners Banka,1
+banking,Bankovnictví / Finance,120735779331225,Česká spořitelna Kariéra,1
+banking,Bankovnictví / Finance,107686765982646,Česká spořitelna - penzijní společnost,1
+banking,Bankovnictví / Finance,108671021569346,Partners Banka,1
+banking,Bankovnictví / Finance,203001175509,Raiffeisen stavební spořitelna,1
+insurance,Pojišťovnictví,971715719657405,PetExpert/ČSOB Pojišťovna,1
+real_estate,Reality / Nemovitosti,109535345529497,Creditas Real Estate,1
+banking,Bankovnictví / Finance,188676337835075,Air Bank,1
+banking,Bankovnictví / Finance,138479367229,Moneta Money Bank,1
+banking,Bankovnictví / Finance,107021016038575,Fio banka,1
+banking,Bankovnictví / Finance,10883677459,mBank,1
+banking,Bankovnictví / Finance,104333862287254,UniCredit Bank,1
+ecommerce,E-commerce / Retail,70488720814,Alza.cz,1
+ecommerce,E-commerce / Retail,101556655989,Notino CZ,1
+ecommerce,E-commerce / Retail,1476873045888686,rohlik.cz,1
+ecommerce,E-commerce / Retail,521044541333016,Košík.cz,1
+ecommerce,E-commerce / Retail,118177448049194,Temu Czechia,1
+ecommerce,E-commerce / Retail,116282456784,Allegro.cz,1
+ecommerce,E-commerce / Retail,417246441639589,Lidl Česká republika,1
+ecommerce,E-commerce / Retail,122037420752,PENNY Česká republika,1
+ecommerce,E-commerce / Retail,133129068446,DATART CZ,1
+ecommerce,E-commerce / Retail,244816482042,CZC.cz,1
+ecommerce,E-commerce / Retail,18349420804,Heureka.cz,1
+ecommerce,E-commerce / Retail,317398901621260,IKEA Česko,1
+ecommerce,E-commerce / Retail,376809572404232,Kaufland Česká republika,1
+telecom,Telekomunikace,120461304659141,O2 Czech Republic,1
+telecom,Telekomunikace,286483085526,T-Mobile CZ,1
+telecom,Telekomunikace,176688316811,Vodafone CZ,1
+telecom,Telekomunikace,391145720998738,MOBIL.CZ,1
+automotive,Automotive,336328666439257,Škoda Auto,1
+automotive,Automotive,119063861466791,Hyundai CZ,1
+automotive,Automotive,308878909205138,Toyota Česká republika,1
+automotive,Automotive,107277669328435,Volkswagen Česká republika,1
+automotive,Automotive,125214950828155,BMW Česká republika,1
+automotive,Automotive,138144009548256,Mercedes-Benz CZ,1
+automotive,Automotive,333677018188,Kia Czech,1
+automotive,Automotive,116914458334869,Audi Czech Republic,1
+automotive,Automotive,141398165876085,Renault,1
+automotive,Automotive,690269304366316,Volkswagen Financial Services CZ,1
+insurance,Pojišťovnictví,490340660444,Česká pojišťovna,1
+insurance,Pojišťovnictví,682448045139557,Allianz Česká republika,1
+insurance,Pojišťovnictví,221119377898604,Kooperativa pojišťovna,1
+insurance,Pojišťovnictví,678609582222825,ČSOB Pojišťovna,1
+insurance,Pojišťovnictví,108196682034185,Colonnade Insurance CZ,1
+insurance,Pojišťovnictví,112840467041210,UNIQA pojišťovna,1
+insurance,Pojišťovnictví,490340660444,Generali Česká pojišťovna,1
+energy,Energetika,312181048799130,ČEZ,1
+energy,Energetika,356382154550156,E.ON Česká republika,1
+energy,Energetika,389845981037451,innogy Česká republika,1
+energy,Energetika,91085933146,Pražská energetika (PRE),1
+qsr,Rychlé občerstvení (QSR),43473682279,McDonald's Czech Republic,1
+qsr,Rychlé občerstvení (QSR),109295541644,KFC Czech Republic,1
+qsr,Rychlé občerstvení (QSR),211772738846061,Burger King Czech Republic,
+qsr,Rychlé občerstvení (QSR),103358809697830,Starbucks Czech Republic,1
+qsr,Rychlé občerstvení (QSR),153421068089548,Subway Česká republika,1
+qsr,Rychlé občerstvení (QSR),1902805183378821,Pizza Hut Czech Republic,1
+qsr,Rychlé občerstvení (QSR),107439327326051,Domino's Czech Republic,1
+qsr,Rychlé občerstvení (QSR),109063235285333,Popeyes Česko,1
+qsr,Rychlé občerstvení (QSR),510984038764358,Coca-Cola,1
+qsr,Rychlé občerstvení (QSR),1084820341548562,Red Bull,1
+qsr,Rychlé občerstvení (QSR),14226545351,Red Bull CZ,1
+ecommerce,E-commerce / Retail,236217239809733,Albert,1
+ecommerce,E-commerce / Retail,177610105653371,Samsung,1
+ecommerce,E-commerce / Retail,156655284364244,Philips ČR,1
+ecommerce,E-commerce / Retail,463004520739533,Xiaomi Česká Republika,1
+ecommerce,E-commerce / Retail,234896633281897,Smarty.czsk,1
+food_delivery,Food Delivery,634279750246512,Wolt Czech Republic,1
+food_delivery,Food Delivery,100659904925410,Bolt Food CZ,1
+food_delivery,Food Delivery,429167223815607,Foodora,1
+real_estate,Reality / Nemovitosti,93585393577,Bezrealitky.cz,1
+real_estate,Reality / Nemovitosti,57392783498,Sreality.cz,0
+real_estate,Reality / Nemovitosti,729585403877532,RE/MAX Czech Republic,1
+real_estate,Reality / Nemovitosti,113461758682751,Century 21 Czech Republic,1
+real_estate,Reality / Nemovitosti,1647116065508880,Lexxus Norton,1
+real_estate,Reality / Nemovitosti,112900542099161,M&M Reality,1
+fashion,Fashion / Oblečení,150804958321,Zara,0
+fashion,Fashion / Oblečení,314641101972770,Marks and Spencer,1
+fashion,Fashion / Oblečení,1679233659023406,H&M,1
+fashion,Fashion / Oblečení,1150649134987783,Reserved,1
+fashion,Fashion / Oblečení,1824279721179597,About You CZ,1
+fashion,Fashion / Oblečení,247070548799078,Answear.cz,1
+fashion,Fashion / Oblečení,147796908603981,Bonprix Česká republika,1
+fashion,Fashion / Oblečení,171650949545171,Vinted CZ,1
+drugstore,Drogerie / Kosmetika,103076089787357,dm drogerie markt Česká republika,1
+drugstore,Drogerie / Kosmetika,231015813601164,ROSSMANN Česká republika,1
+drugstore,Drogerie / Kosmetika,101556655989,Notino,1
+drugstore,Drogerie / Kosmetika,165885069168,BIODERMA,1
+drugstore,Drogerie / Kosmetika,130777503749454,Dove,1
+drugstore,Drogerie / Kosmetika,184330541591449,Schwarzkopf,1
+drugstore,Drogerie / Kosmetika,163628220353870,L'Oréal Paris,1
+drugstore,Drogerie / Kosmetika,170261873008353,Avon Česká republika,1
+sport_fitness,Sport / Fitness,451306181606760,Decathlon Czech Republic,1
+sport_fitness,Sport / Fitness,100594548700929,SportObchod.cz,0
+sport_fitness,Sport / Fitness,110541362763,Sportisimo,1
+sport_fitness,Sport / Fitness,182668085093340,Hervis Sport CZ,0
+streaming_media,Streaming / Média,113673210035394,Netflix Czech Republic,1
+streaming_media,Streaming / Média,104909345054614,Max (HBO) Czech,1
+streaming_media,Streaming / Média,1233731130062594,Disney+,1
+streaming_media,Streaming / Média,339726952707632,PrimaPlus,1
+streaming_media,Streaming / Média,137778619615350,OnePlay,1
+streaming_media,Streaming / Média,217124518297,Česká televize,0
+fintech,Fintech / Platební služby,335642513253333,Revolut,1
+fintech,Fintech / Platební služby,150317658822774,Visa,1
+fintech,Fintech / Platební služby,388940517813,PayPal Czech Republic,0
+fintech,Fintech / Platební služby,1391793514424506,Wise (TransferWise) CZ,0
+fintech,Fintech / Platební služby,488837807880550,Twisto,1
+fintech,Fintech / Platební služby,101474701570427,Roger Payments CZ,0
+fintech,Fintech / Platební služby,108046244587093,Zuno Bank,0
+edtech,Vzdělávání / EdTech,135578283226835,Coursera Czech,1
+edtech,Vzdělávání / EdTech,100858346620905,Udemy,1
+edtech,Vzdělávání / EdTech,854959704597423,Seduo.cz,1
+edtech,Vzdělávání / EdTech,630824190282809,Czechitas,1
+edtech,Vzdělávání / EdTech,246928822072669,Engeto Academy,1
