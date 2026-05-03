@@ -42,9 +42,13 @@ azure_functions/
   function_app.py    # Blueprint registration
   host.json
   requirements.txt
-local_data/          # Standalone scripts (catchup, ad hoc fetches)
+analysis/
+  trends/            # Empirical experiment from chapter 7.5
+                     # — DSA reach × Google Trends / Wikipedia pageviews correlation
 .env.example         # Required environment variables
 ```
+
+See [`analysis/trends/README.md`](analysis/trends/README.md) for details on reproducing the empirical experiment.
 
 ## Local setup
 
