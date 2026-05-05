@@ -1,0 +1,266 @@
+raw_name,normalized_name,sector
+Air Bank,Air Bank,banking
+Air Bank a.s.,Air Bank,banking
+Banka Creditas,Banka Creditas,banking
+Fio banka,Fio banka,banking
+Fio banka a.s.,Fio banka,banking
+Fio banka a.s. (2),Fio banka,banking
+Komerční banka,Komerční banka,banking
+Komerční banka a.s.,Komerční banka,banking
+Moneta Money Bank,Moneta Money Bank,banking
+Partners Banka,Partners Banka,banking
+"Partners Banka, a.s.",Partners Banka,banking
+Raiffeisen stavební spořitelna,Raiffeisenbank,banking
+Raiffeisenbank,Raiffeisenbank,banking
+Raiffeisenbank a.s.,Raiffeisenbank,banking
+Raiffeisenbank Česká republika,Raiffeisenbank,banking
+Trinity Bank,Trinity Bank,banking
+TRINITY BANK a.s.,Trinity Bank,banking
+UniCredit Bank,UniCredit Bank,banking
+UniCredit,UniCredit Bank,banking
+UniCredit Bank CZ & SK,UniCredit Bank,banking
+mBank,mBank,banking
+ČSOB,ČSOB,banking
+ČSOB a.s.,ČSOB,banking
+Česká spořitelna,Česká spořitelna,banking
+Česká spořitelna - penzijní společnost,Česká spořitelna,banking
+Česká spořitelna Kariéra,Česká spořitelna,banking
+Česká spořitelna a.s.,Česká spořitelna,banking
+Česká spořitelna - Firmy a podnikatelé,Česká spořitelna,banking
+"ČESKÁ SPOŘITELNA, A.S.",Česká spořitelna,banking
+ČSOB,ČSOB,banking
+Československá obchodní banka,ČSOB,banking
+Československá obchodní banka a.s.,ČSOB,banking
+"Československá obchodní banka, a.s.",ČSOB,banking
+"ČESKOSLOVENSKÁ OBCHODNÍ BANKA, A. S.",ČSOB,banking
+"ČESKOSLOVENSKÁ OBCHODNÍ BANKA, A.S.",ČSOB,banking
+ČSOB Kariéra,ČSOB,banking
+Audi Czech,Audi,automotive
+Audi Czech Republic,Audi,automotive
+BMW Czech,BMW,automotive
+BMW Česká republika,BMW,automotive
+Ford Česká republika,Ford,automotive
+Havas Media Czech Republic (Inzerují jen KIA),Kia,automotive
+Hyundai CZ,Hyundai,automotive
+Hyundai Czech,Hyundai,automotive
+Kia Czech,Kia,automotive
+Kia Czech s.r.o.,Kia,automotive
+Mercedes-Benz CZ,Mercedes-Benz,automotive
+Mercedes-Benz Česká republika,Mercedes-Benz,automotive
+Renault,Renault,automotive
+Renault Česká republika,Renault,automotive
+Toyota Czech,Toyota,automotive
+Toyota Česká republika,Toyota,automotive
+Volkswagen Financial Services CZ,Volkswagen,automotive
+Volkswagen Česká republika,Volkswagen,automotive
+Škoda Auto,Škoda Auto,automotive
+Škoda,Škoda Auto,automotive
+Allegro,Allegro,ecommerce
+Allegro.cz,Allegro,ecommerce
+One by Allegro,Allegro,ecommerce
+Sell on Allegro,Allegro,ecommerce
+Alza.cz,Alza.cz,ecommerce
+Alza.cz a.s.,Alza.cz,ecommerce
+CZC.cz,CZC.cz,ecommerce
+DATART CZ,Datart,ecommerce
+Datart,Datart,ecommerce
+Heureka,Heureka,ecommerce
+Heureka.cz,Heureka,ecommerce
+Heureka.cz / sk,Heureka,ecommerce
+IKEA ČESKÁ REPUBLIKA S.R.O.,IKEA,ecommerce
+IKEA Česko,IKEA,ecommerce
+Kaufland,Kaufland,ecommerce
+Kaufland Česká republika,Kaufland,ecommerce
+Kaufland Česká republika v.o.s.,Kaufland,ecommerce
+Košík.cz,Košík.cz,ecommerce
+Lidl Česká republika,Lidl,ecommerce
+Mall.cz,Mall.cz,ecommerce
+Mondelez CR Biscuit Production s.r.o.,Mondelez,ecommerce
+Notino,Notino,ecommerce
+Notino CZ,Notino,ecommerce
+PENNY Česká republika,Penny,ecommerce
+Phillips Czech Republic s.r.o.,Philips,ecommerce
+Rohlik.cz,Rohlík,ecommerce
+rohlik.cz,Rohlík,ecommerce
+Temu,Temu,ecommerce
+Temu Czechia,Temu,ecommerce
+Tesco Česko,Tesco,ecommerce
+Zalando,Zalando,ecommerce
+BIODERMA,Bioderma,drugstore
+Beiersdorf spol. s r.o. (Nivea),Nivea,drugstore
+Dove,Dove,drugstore
+HENKEL ČR SPOL. S R.O.,Henkel,drugstore
+L'ORÉAL ČESKÁ REPUBLIKA S.R.O.,L'Oréal,drugstore
+Notino,Notino,drugstore
+ROSSMANN,Rossmann,drugstore
+ROSSMANN Česká republika,Rossmann,drugstore
+AVON Cosmetics spol. s r.o.,AVON,drugstore
+AVON,AVON,drugstore
+Avon Česká republika,AVON,drugstore
+L'Oréal Paris,L'Oréal,drugstore
+Samsung,Samsung,ecommerce
+Samsung Electronics Czech and Slovak s.r.o.,Samsung,ecommerce
+Philips ČR,Philips,ecommerce
+Philips Czech Republic s.r.o.,Philips,ecommerce
+Xiaomi Česká Republika,Xiaomi,ecommerce
+Smarty.czsk,Smarty.cz,ecommerce
+Marks and Spencer,Marks & Spencer,fashion
+Visa,Visa,fintech
+Popeyes Česko,Popeyes,qsr
+MOBIL.CZ,Mobil.cz,telecom
+Schwarzkopf,Schwarzkopf,drugstore
+dm drogerie markt,dm,drugstore
+dm drogerie markt Česká republika,dm,drugstore
+Coursera,Coursera,edtech
+Coursera Czech,Coursera,edtech
+Czechitas,Czechitas,edtech
+Engeto Academy,Engeto Academy,edtech
+Seduo.cz,Seduo.cz,edtech
+Udemy,Udemy,edtech
+E.ON Česká republika,E.ON,energy
+Pražská energetika,PRE,energy
+Pražská energetika (PRE),PRE,energy
+innogy Česká republika,innogy,energy
+ČEZ,ČEZ,energy
+Skupina ČEZ,ČEZ,energy
+About You,About You,fashion
+About You CZ,About You,fashion
+ABOUT YOU,About You,fashion
+Answear.cz,Answear,fashion
+Bonprix Česká republika,Bonprix,fashion
+H&M,H&M,fashion
+Marks & Spencer,Marks & Spencer,fashion
+Reserved,Reserved,fashion
+Vinted,Vinted,fashion
+Vinted CZ,Vinted,fashion
+Zalando,Zalando,fashion
+Zara,Zara,fashion
+PayPal,PayPal,fintech
+PayPal Czech Republic,PayPal,fintech
+Revolut,Revolut,fintech
+Twisto,Twisto,fintech
+Wise,Wise,fintech
+Wise (TransferWise) CZ,Wise,fintech
+Bolt,Bolt,food_delivery
+Bolt Food,Bolt,food_delivery
+Bolt Food CZ,Bolt,food_delivery
+Bolt for Business,Bolt,food_delivery
+Foodora,Foodora,food_delivery
+foodora,Foodora,food_delivery
+foodora Česko,Foodora,food_delivery
+Wolt,Wolt,food_delivery
+Wolt Czech Republic,Wolt,food_delivery
+Allianz Česká republika,Allianz,insurance
+Colonnade Insurance,Colonnade,insurance
+Colonnade Insurance CZ,Colonnade,insurance
+Generali Česká pojišťovna,Česká pojišťovna,insurance
+Kooperativa pojišťovna,Kooperativa,insurance
+PetExpert/ČSOB Pojišťovna,ČSOB Pojišťovna,insurance
+UNIQA pojišťovna,UNIQA,insurance
+ČSOB Pojišťovna,ČSOB Pojišťovna,insurance
+Česká pojišťovna,Česká pojišťovna,insurance
+Burger King,Burger King,qsr
+Burger King Czech Republic,Burger King,qsr
+Domino's Czech Republic,Domino's,qsr
+KFC,KFC,qsr
+KFC Czech Republic,KFC,qsr
+McDonald's,McDonald's,qsr
+McDonald's Czech Republic,McDonald's,qsr
+Pizza Hut Czech Republic,Pizza Hut,qsr
+Popeyes,Popeyes,qsr
+Starbucks,Starbucks,qsr
+Starbucks Czech Republic,Starbucks,qsr
+Subway Česká republika,Subway,qsr
+Bezrealitky.cz,Bezrealitky,real_estate
+CREDITAS Real Estate,Creditas Real Estate,real_estate
+Creditas Real Estate,Creditas Real Estate,real_estate
+Century 21,Century 21,real_estate
+Century 21 Czech Republic,Century 21,real_estate
+Lexxus Norton,Lexxus Norton,real_estate
+M&M Reality,M&M Reality,real_estate
+RE/MAX,RE/MAX,real_estate
+RE/MAX Czech Republic,RE/MAX,real_estate
+RE/MAX Scopus,RE/MAX,real_estate
+RE/MAX Česká republika,RE/MAX,real_estate
+Sreality.cz,Sreality.cz,real_estate
+Decathlon,Decathlon,sport_fitness
+Decathlon Czech Republic,Decathlon,sport_fitness
+Hervis Sport CZ,Hervis,sport_fitness
+SportObchod.cz,SportObchod.cz,sport_fitness
+Sportisimo,Sportisimo,sport_fitness
+Disney+,Disney+,streaming_media
+HBO Max,HBO Max,streaming_media
+HBOMax,HBO Max,streaming_media
+Max,HBO Max,streaming_media
+Max (HBO) Czech,HBO Max,streaming_media
+Netflix,Netflix,streaming_media
+Netflix Czech Republic,Netflix,streaming_media
+OnePlay,OnePlay,streaming_media
+PrimaPlus,Prima+,streaming_media
+Voyo,Voyo,streaming_media
+Česká televize,Česká televize,streaming_media
+LEXXUS NORTON,Lexxus Norton,real_estate
+O2 Czech Republic,O2,telecom
+O2 Czech Republic a.s.,O2,telecom
+O2 CZ,O2,telecom
+T-Mobile CZ,T-Mobile,telecom
+T-Mobile Czech Republic,T-Mobile,telecom
+T-Mobile Czech Republic a.s.,T-Mobile,telecom
+Vodafone CZ,Vodafone,telecom
+Vodafone Czech Republic,Vodafone,telecom
+Vodafone Czech Republic a.s.,Vodafone,telecom
+VISA EUROPE MANAGEMENT SERVICES LIMITED,Visa,fintech
+Volkswagen,Volkswagen,automotive
+Zalando Partner,Zalando,fashion
+bonprix,Bonprix,fashion
+e.on,E.ON,energy
+mBank.cz,mBank,banking
+ANSWEAR,Answear,fashion
+Bezrealitky,Bezrealitky,real_estate
+CENTURY 21 Czech Republic,Century 21,real_estate
+Colonnade Insurance - Česká republika,Colonnade,insurance
+"Colonnade Insurance S.A., Branch Czech Republic",Colonnade,insurance
+Decathlon - Česká republika,Decathlon,sport_fitness
+Domino's Pizza Czech Republic,Domino's,qsr
+ENGETO Academy,Engeto Academy,edtech
+IKEA,IKEA,ecommerce
+Kooperativa,Kooperativa,insurance
+M&M reality holding - mmreality.cz,M&M Reality,real_estate
+MONETA Bank,Moneta Money Bank,banking
+MONETA Money Bank,Moneta Money Bank,banking
+Oneplay,OnePlay,streaming_media
+Pizza Hut Česká republika,Pizza Hut,qsr
+Sportisimo Česká republika,Sportisimo,sport_fitness
+Starbucks Česká republika,Starbucks,qsr
+"Twisto, A Param Company",Twisto,fintech
+Twisto.cz,Twisto,fintech
+UNIQA CZ,UNIQA,insurance
+Samsung Electronics Czech and Slovak s.r.o.,Samsung,ecommerce
+Smarty.cz,Smarty.cz,ecommerce
+Rossmann CZ,Rossmann,drugstore
+Xiaomi,Xiaomi,ecommerce
+"BEIJING XIAOMI MOBILE SOFTWARE CO., LTD",Xiaomi,ecommerce
+Delivery Hero Czech Republic s.r.o. - FOODORA,Foodora,food_delivery
+Burger King CZ,Burger King,qsr
+Burger King Czech Republic,Burger King,qsr
+Harmony.cz,Harmony.cz,ecommerce
+MOBIL.CZ,Mobil.cz,telecom
+"ALBERT ČESKÁ REPUBLIKA, S.R.O.",Albert,ecommerce
+"RED BULL ČESKÁ REPUBLIKA, S.R.O.",Red Bull,qsr
+RED BULL ČESKÁ REPUBLIKA S.R.O.,Red Bull,qsr
+Red Bull,Red Bull,qsr
+Red Bull CZ,Red Bull,qsr
+"COCA-COLA HBC ČESKO A SLOVENSKO, S.R.O.",Coca-Cola,qsr
+COCA-COLA HBC ČESKO A SLOVENSKO S.R.O.,Coca-Cola,qsr
+Coca-Cola,Coca-Cola,qsr
+Albert,Albert,ecommerce
+"ALBERT ČESKÁ REPUBLIKA, S.R.O.",Albert,ecommerce
+ALBERT ČESKÁ REPUBLIKA S.R.O.,Albert,ecommerce
+"Albert ČR",Albert,ecommerce
+"Lidl Česká republika s.r.o.",Lidl,ecommerce
+"UNICREDIT SPA",UniCredit Bank,banking
+"Dr. Max Lékárna",Dr.Max,drugstore
+"Dr. Max Česko",Dr.Max,drugstore
+SAZKA,Sazka,betting
+"Sazka (Allwyn)",Sazka,betting
+"Ferrero pralinky",Ferrero,qsr

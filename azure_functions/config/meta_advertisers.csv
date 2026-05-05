@@ -1,4 +1,4 @@
-﻿sector,display_name,page_id,page_name,active
+sector,display_name,page_id,page_name,active
 banking,Bankovnictví / Finance,166024303411062,Raiffeisenbank,1
 banking,Bankovnictví / Finance,90594467955,Česká spořitelna,1
 banking,Bankovnictví / Finance,315972808450196,ČSOB,1
@@ -8,7 +8,6 @@ banking,Bankovnictví / Finance,271913363503049,Trinity Bank,1
 banking,Bankovnictví / Finance,108671021569346,Partners Banka,1
 banking,Bankovnictví / Finance,120735779331225,Česká spořitelna Kariéra,1
 banking,Bankovnictví / Finance,107686765982646,Česká spořitelna - penzijní společnost,1
-banking,Bankovnictví / Finance,108671021569346,Partners Banka,1
 banking,Bankovnictví / Finance,203001175509,Raiffeisen stavební spořitelna,1
 insurance,Pojišťovnictví,971715719657405,PetExpert/ČSOB Pojišťovna,1
 real_estate,Reality / Nemovitosti,109535345529497,Creditas Real Estate,1
@@ -43,8 +42,7 @@ automotive,Automotive,138144009548256,Mercedes-Benz CZ,1
 automotive,Automotive,333677018188,Kia Czech,1
 automotive,Automotive,116914458334869,Audi Czech Republic,1
 automotive,Automotive,141398165876085,Renault,1
-automotive,Automotive,690269304366316,Volkswagen Financial Services CZ,1
-insurance,Pojišťovnictví,490340660444,Česká pojišťovna,1
+automotive,Automotive,690269304366316,Volkswagen Financial Services CZ,0
 insurance,Pojišťovnictví,682448045139557,Allianz Česká republika,1
 insurance,Pojišťovnictví,221119377898604,Kooperativa pojišťovna,1
 insurance,Pojišťovnictví,678609582222825,ČSOB Pojišťovna,1
@@ -57,7 +55,7 @@ energy,Energetika,389845981037451,innogy Česká republika,1
 energy,Energetika,91085933146,Pražská energetika (PRE),1
 qsr,Rychlé občerstvení (QSR),43473682279,McDonald's Czech Republic,1
 qsr,Rychlé občerstvení (QSR),109295541644,KFC Czech Republic,1
-qsr,Rychlé občerstvení (QSR),211772738846061,Burger King Czech Republic,
+qsr,Rychlé občerstvení (QSR),211772738846061,Burger King Czech Republic,1
 qsr,Rychlé občerstvení (QSR),103358809697830,Starbucks Czech Republic,1
 qsr,Rychlé občerstvení (QSR),153421068089548,Subway Česká republika,1
 qsr,Rychlé občerstvení (QSR),1902805183378821,Pizza Hut Czech Republic,1
@@ -90,7 +88,6 @@ fashion,Fashion / Oblečení,147796908603981,Bonprix Česká republika,1
 fashion,Fashion / Oblečení,171650949545171,Vinted CZ,1
 drugstore,Drogerie / Kosmetika,103076089787357,dm drogerie markt Česká republika,1
 drugstore,Drogerie / Kosmetika,231015813601164,ROSSMANN Česká republika,1
-drugstore,Drogerie / Kosmetika,101556655989,Notino,1
 drugstore,Drogerie / Kosmetika,165885069168,BIODERMA,1
 drugstore,Drogerie / Kosmetika,130777503749454,Dove,1
 drugstore,Drogerie / Kosmetika,184330541591449,Schwarzkopf,1
@@ -118,3 +115,29 @@ edtech,Vzdělávání / EdTech,100858346620905,Udemy,1
 edtech,Vzdělávání / EdTech,854959704597423,Seduo.cz,1
 edtech,Vzdělávání / EdTech,630824190282809,Czechitas,1
 edtech,Vzdělávání / EdTech,246928822072669,Engeto Academy,1
+brewing,Pivovary,314587155973,Pilsner Urquell,1
+brewing,Pivovary,109806192369339,Staropramen,1
+brewing,Pivovary,91457312359,Budějovický Budvar,1
+brewing,Pivovary,349286145122310,Kozel,1
+brewing,Pivovary,146991996743,Gambrinus,1
+brewing,Pivovary,44416189336,Radegast,1
+brewing,Pivovary,284394981604983,Krušovice,1
+brewing,Pivovary,140077966056545,Bernard,1
+brewing,Pivovary,206276076058224,Starobrno,1
+brewing,Pivovary,44866215803,Svijany,1
+ecommerce,E-commerce / Retail,365604620536,Zalando,1
+ecommerce,E-commerce / Retail,168924196480543,Tesco Česko,1
+automotive,Automotive,116171061735236,Ford ČR,1
+betting,Sázkové kanceláře,295889117124834,Tipsport,1
+betting,Sázkové kanceláře,109056560836,Fortuna,1
+betting,Sázkové kanceláře,450893348278494,Sazkabet,1
+betting,Sázkové kanceláře,102274002445899,Betano,1
+betting,Sázkové kanceláře,427832207571644,Chance,1
+consulting,Consulting,163939170375,PwC Česká republika,1
+consulting,Consulting,244816078867402,KPMG Česká Republika,1
+consulting,Consulting,124069420966177,Deloitte,1
+consulting,Consulting,123194405061880,EY Česká republika,1
+betting,Sázení / Gambling,296826220595,Sazka (Allwyn),1
+drugstore,Drogerie / Kosmetika,553892697802123,Simply You Pharmaceuticals,1
+qsr,Rychlé občerstvení (QSR),1906052399647719,Ferrero pralinky,1
+drugstore,Drogerie / Kosmetika,134937073279530,Dr.Max,1

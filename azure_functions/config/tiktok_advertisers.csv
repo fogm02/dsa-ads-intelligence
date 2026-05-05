@@ -1,0 +1,40 @@
+sector,business_id,name,active
+banking,7405161478984089601,Raiffeisenbank a.s.,1
+banking,7512420524488818689,Air Bank a.s.,1
+banking,7405159106736242705,Česká spořitelna a.s.,1
+banking,7484269716668858385,Komerční banka a.s.,1
+banking,7405159118379499521,ČSOB a.s.,1
+banking,7562000691393363985,Fio banka a.s.,1
+banking,7561662286662811649,Fio banka a.s. (2),1
+banking,7433435973188337681,Partners Banka,1
+telecom,7205916533464498177,O2 Czech Republic a.s.,1
+telecom,6876500857404261121,Vodafone Czech Republic a.s.,1
+telecom,6943594930266702594,T-Mobile Czech Republic a.s.,1
+ecommerce,6960941847262790402,Kaufland Česká republika v.o.s.,1
+drugstore,6951044201366684417,L'ORÉAL ČESKÁ REPUBLIKA S.R.O.,1
+ecommerce,7556183251002523665,IKEA ČESKÁ REPUBLIKA S.R.O.,1
+ecommerce,6876461811978208001,Allegro.cz,1
+fashion,7535762032453500935,Marks & Spencer,1
+streaming_media,6876463121888707329,Netflix,1
+fintech,6876458876791685889,Revolut,1
+ecommerce,7082705505352696578,Phillips Czech Republic s.r.o.,1
+food_delivery,6876506897789223682,Foodora,1
+qsr,7395141690392182785,Popeyes,1
+automotive,7225512487540588545,Havas Media Czech Republic (Inzerují jen KIA),1
+ecommerce,7239629914784415745,Mondelez CR Biscuit Production s.r.o.,1
+drugstore,7355915485227171856,HENKEL ČR SPOL. S R.O.,1
+drugstore,6966922748153037569,Beiersdorf spol. s r.o. (Nivea),1
+drugstore,6953901216136954626,AVON Cosmetics spol. s r.o.,1
+fintech,6883404378422641410,VISA EUROPE MANAGEMENT SERVICES LIMITED,1
+ecommerce,7176289506537013250,Samsung Electronics Czech and Slovak s.r.o.,1
+ecommerce,7201131452656779265,Smarty.cz,1
+drugstore,7594452129465909249,Rossmann CZ,1
+ecommerce,6876451103148344066,Xiaomi,1
+qsr,7353920246014836752,Burger King CZ,1
+ecommerce,7506914367019974673,Harmony.cz,1
+telecom,7098335610653442818,MOBIL.CZ,1
+ecommerce,7574808333794705425,ALBERT ČESKÁ REPUBLIKA S.R.O.,1
+qsr,6979202606761509633,RED BULL ČESKÁ REPUBLIKA S.R.O.,1
+qsr,7298382797180305409,COCA-COLA HBC ČESKO A SLOVENSKO S.R.O.,1
+ecommerce,6876505704203551490,Lidl,1
+banking,6982126610019255042,UniCredit Bank,1

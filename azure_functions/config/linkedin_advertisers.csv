@@ -1,0 +1,96 @@
+sector,display_name,advertiser_name,active,api_names
+banking,Bankovnictví / Finance,Česká spořitelna,1,Česká spořitelna|Česká spořitelna - Firmy a podnikatelé
+banking,Bankovnictví / Finance,ČSOB,1,ČSOB
+banking,Bankovnictví / Finance,Komerční banka,1,Komerční banka
+banking,Bankovnictví / Finance,Raiffeisenbank,1,Raiffeisenbank Česká republika
+banking,Bankovnictví / Finance,mBank,1,mBank S.A.|mBank CZ
+banking,Bankovnictví / Finance,Air Bank,1,Air Bank a.s.|Air Bank
+banking,Bankovnictví / Finance,Fio banka,1,Fio banka
+banking,Bankovnictví / Finance,Moneta Money Bank,1,MONETA Money Bank
+banking,Bankovnictví / Finance,Partners Banka,1,"Partners Banka, a.s."
+banking,Bankovnictví / Finance,UniCredit Bank,1,UniCredit Bank CZ & SK
+banking,Bankovnictví / Finance,Trinity Bank,1,TRINITY BANK a.s.
+banking,Bankovnictví / Finance,Banka Creditas,1,Banka CREDITAS|CREDITAS
+banking,Bankovnictví / Finance,Raiffeisen stavební spořitelna,1,Raiffeisen stavební spořitelna a.s.
+real_estate,Reality / Nemovitosti,CREDITAS Real Estate,1,CREDITAS Real Estate
+real_estate,Reality / Nemovitosti,RE/MAX,1,RE/MAX Scopus|RE/MAX Česká republika|RE/MAX Czech Republic
+real_estate,Reality / Nemovitosti,Century 21,1,Century 21|CENTURY 21 Česká republika
+real_estate,Reality / Nemovitosti,Bezrealitky.cz,1,Bezrealitky.cz
+real_estate,Reality / Nemovitosti,M&M Reality,1,M&M Reality
+real_estate,Reality / Nemovitosti,Lexxus Norton,1,LEXXUS NORTON
+ecommerce,E-commerce / Retail,Alza.cz,1,Alza.cz a.s.
+ecommerce,E-commerce / Retail,Mall.cz,1,Mall.cz|Internet Mall|MallGroup
+ecommerce,E-commerce / Retail,Rohlik.cz,1,Rohlik Group|Rohlik.cz
+ecommerce,E-commerce / Retail,Košík.cz,1,Košík.cz
+ecommerce,E-commerce / Retail,Notino,1,Notino
+ecommerce,E-commerce / Retail,CZC.cz,1,CZC.cz
+ecommerce,E-commerce / Retail,Heureka,1,Heureka.cz / sk|Heureka.cz
+ecommerce,E-commerce / Retail,Allegro,1,Allegro|One by Allegro|Sell on Allegro
+ecommerce,E-commerce / Retail,Temu,1,Temu
+ecommerce,E-commerce / Retail,Lidl Česká republika,1,Lidl Česká republika
+ecommerce,E-commerce / Retail,Kaufland,1,Kaufland Česká republika v.o.s.|Kaufland Česká republika
+ecommerce,E-commerce / Retail,IKEA Česko,1,IKEA
+ecommerce,E-commerce / Retail,Datart,1,DATART|Datart
+ecommerce,E-commerce / Retail,Tesco Česko,1,Tesco Czech Republic|Tesco Stores CR
+ecommerce,E-commerce / Retail,Samsung,1,Samsung Electronics Česko a Slovensko|Samsung
+ecommerce,E-commerce / Retail,Philips,1,Philips
+ecommerce,E-commerce / Retail,Albert,1,Albert Česká republika|Albert
+ecommerce,E-commerce / Retail,PENNY,1,PENNY Česká republika|PENNY
+telecom,Telekomunikace,O2 Czech Republic,1,O2 Czech Republic
+telecom,Telekomunikace,T-Mobile Czech Republic,1,T-Mobile Czech Republic|T-Mobile CZ
+telecom,Telekomunikace,Vodafone,1,Vodafone|Vodafone CZ
+telecom,Telekomunikace,MOBIL.CZ,1,MOBIL.CZ
+automotive,Automotive,Škoda Auto,1,Škoda Auto
+automotive,Automotive,Hyundai Czech,1,Hyundai Motor Czech s.r.o.|Hyundai Motor Czech
+automotive,Automotive,Toyota Czech,1,Toyota Česká republika
+automotive,Automotive,Volkswagen Česká republika,1,Volkswagen ČR
+automotive,Automotive,BMW Czech,1,BMW Česká republika|BMW Group
+automotive,Automotive,Mercedes-Benz Česká republika,1,Mercedes-Benz Česká republika
+automotive,Automotive,Kia Czech,1,Kia Czech s.r.o.
+automotive,Automotive,Audi Czech,1,Audi Czech Republic
+automotive,Automotive,Renault Česká republika,1,Renault Česká republika|Renault Group
+automotive,Automotive,Ford Česká republika,1,Ford Česká republika|Ford Motor Company
+automotive,Automotive,Volkswagen Financial Services,1,Volkswagen Financial Services
+insurance,Pojišťovnictví,Česká pojišťovna,1,Generali Česká pojišťovna|Česká pojišťovna
+insurance,Pojišťovnictví,Allianz Česká republika,1,Allianz pojišťovna Česká republika|Allianz
+insurance,Pojišťovnictví,Kooperativa pojišťovna,1,Kooperativa|Kooperativa pojišťovna
+insurance,Pojišťovnictví,ČSOB Pojišťovna,1,ČSOB Pojišťovna
+insurance,Pojišťovnictví,Colonnade Insurance,1,"Colonnade Insurance S.A., Branch Czech Republic"
+insurance,Pojišťovnictví,UNIQA pojišťovna,1,UNIQA CZ|UNIQA pojišťovna
+energy,Energetika,ČEZ,1,ČEZ
+energy,Energetika,E.ON Česká republika,1,E.ON CZ|E.ON Česká republika
+energy,Energetika,innogy Česká republika,1,innogy Česká republika
+energy,Energetika,Pražská energetika,1,"Pražská energetika, a. s.|PRE"
+qsr,Rychlé občerstvení (QSR),McDonald's,1,McDonald's|McDonald's Česká a Slovenská republika
+qsr,Rychlé občerstvení (QSR),KFC,1,KFC|KFC Czech & Slovakia
+qsr,Rychlé občerstvení (QSR),Burger King,1,Burger King
+qsr,Rychlé občerstvení (QSR),Starbucks,1,Starbucks
+qsr,Rychlé občerstvení (QSR),Coca-Cola,1,Coca-Cola HBC Česko a Slovensko|Coca-Cola
+qsr,Rychlé občerstvení (QSR),Red Bull,1,Red Bull
+food_delivery,Food Delivery,Wolt,1,Wolt
+food_delivery,Food Delivery,Bolt,1,Bolt|Bolt for Business
+food_delivery,Food Delivery,Foodora,1,foodora
+fashion,Fashion / Oblečení,Zalando,1,Zalando Partner|Zalando
+fashion,Fashion / Oblečení,H&M,1,H&M
+fashion,Fashion / Oblečení,Reserved,1,LPP S.A.|Reserved
+fashion,Fashion / Oblečení,About You,1,ABOUT YOU
+fashion,Fashion / Oblečení,Vinted,1,Vinted
+drugstore,Drogerie / Kosmetika,dm drogerie markt,1,dm drogerie markt Česko|dm drogerie markt
+drugstore,Drogerie / Kosmetika,ROSSMANN,1,ROSSMANN Czech Republic|ROSSMANN
+sport_fitness,Sport / Fitness,Decathlon,1,Decathlon|Decathlon Czech Republic
+sport_fitness,Sport / Fitness,Sportisimo,1,Sportisimo
+streaming_media,Streaming / Média,Netflix,1,Netflix
+streaming_media,Streaming / Média,HBO Max,1,Max|HBO Max
+streaming_media,Streaming / Média,Disney+,1,Disney+|The Walt Disney Company
+streaming_media,Streaming / Média,Voyo,1,Voyo
+streaming_media,Streaming / Média,PrimaPlus,1,FTV Prima|Prima
+fintech,Fintech / Platební služby,Revolut,1,Revolut
+fintech,Fintech / Platební služby,PayPal,1,PayPal
+fintech,Fintech / Platební služby,Wise,1,Wise
+fintech,Fintech / Platební služby,Twisto,1,"Twisto, A Param Company"
+fintech,Fintech / Platební služby,Visa,1,Visa
+edtech,Vzdělávání / EdTech,Coursera,1,Coursera
+edtech,Vzdělávání / EdTech,Udemy,1,Udemy
+edtech,Vzdělávání / EdTech,Seduo.cz,1,Seduo.cz
+edtech,Vzdělávání / EdTech,Czechitas,1,Czechitas
+edtech,Vzdělávání / EdTech,Engeto Academy,1,Engeto Academy
